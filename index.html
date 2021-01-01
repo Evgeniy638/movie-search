@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/blocks/list-films/list-films.css">
+    <link rel="stylesheet" href="./styles/common/search-field/search-field.css">
+</head>
+<body>
+    <section class="list-films">
+        <div class="search-field">
+            <input class="search-field__input" type="text">
+
+            <button class="search-field__search-button"></button>
+
+            <ul class="search-field__list-sagests"></ul>
+        </div>
+
+        <h2>Последнии поиски</h2>
+        <ul class="list-films__list"></ul>
+    </section>
+
+    <script src="./script/api.js"></script>
+    <script src="./script/common/search-field/search-field.js"></script>
+    <script src="./script/blocks/list-films/list-films.js"></script>
+</body>
+</html>

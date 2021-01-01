@@ -1,0 +1,75 @@
+.search-field {
+    position: relative;
+}
+
+:root {
+    --height-search-input: 50px;
+    --size-search-button: 24px;
+}
+
+.search-field__input {
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0 calc(40px + var(--size-search-button)) 0 30px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    outline: none;
+    height: var(--height-search-input);
+    position: relative;
+    z-index: 1;
+}
+
+.search-field__input_focus {
+    box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, 0.28);
+    border-radius: 30px 30px 0 0;
+    border: 0;
+}
+
+.search-field__search-button {
+    position: absolute;
+    width: var(--size-search-button);
+    height: var(--size-search-button);
+    background-image: url("./loop.svg");
+    right: 30px;
+    padding: 0;
+    border: 0;
+    top: calc((var(--height-search-input) - var(--size-search-button)) / 2);
+    z-index: 2;
+    cursor: pointer;
+    background-color: white;
+}
+
+.search-field__list-sagests {
+    min-height: 30px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top: 100%;
+}
+
+.search-field__list-sagests_focus {
+    display: block;
+    box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, 0.28);
+    border-radius: 0 0 30px 30px;
+}
+
+.search-field__sagest {
+    padding: 6px 30px;
+    cursor: pointer;
+}
+
+.search-field__sagest:hover {
+    background-color: #eee;
+}
+
+.search-field__sagest_earlier {
+    color: rgb(195, 139, 209);
+}
